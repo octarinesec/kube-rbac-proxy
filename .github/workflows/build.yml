@@ -80,7 +80,7 @@ jobs:
         make test-e2e
   publish:
     runs-on: ubuntu-latest
-    name: Publish container image to Quay
+    name: Publish container image to cbartifactory dockerhub
     if: github.event_name == 'push'
     needs:
       - check-license
